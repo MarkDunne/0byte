@@ -12,4 +12,4 @@ outFile.writelines(code)
 outFile.close()
 
 import out
-print out.qsort([1,2,3])
+print out.qsort([3, 2, 1])
