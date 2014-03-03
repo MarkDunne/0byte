@@ -7,9 +7,8 @@ def toPythonString(str):
 
 code = map(toPythonString, sorted(listdir('code')))
 
-outFile = open('out.py', 'w')
-outFile.writelines(code)
-outFile.close()
+with open('out.py', 'w') as outFile:
+	outFile.writelines(code)
 
 import out
 print out.qsort([3, 2, 1])
